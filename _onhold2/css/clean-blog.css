@@ -1,15 +1,12 @@
 /*!
- * Clean Blog CSS
+ * Start Bootstrap - Clean Blog v1.1.1 (http://startbootstrap.com/template-overviews/clean-blog)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
-
 body {
   font-family: 'Lora', 'Times New Roman', serif;
   font-size: 20px;
-  color: #404040;
-  position: relative;
-}
-:focus {
-  outline: none;
+  color: #333333;
 }
 p {
   line-height: 1.5;
@@ -18,7 +15,10 @@ p {
 p a {
   text-decoration: underline;
 }
-h1,
+h1 {
+  font-family: 'Open Sans' Helvetica, Arial, sans-serif;
+  font-weight: 500;
+}
 h2,
 h3,
 h4,
@@ -28,22 +28,19 @@ h6 {
   font-weight: 800;
 }
 a {
-  color: #404040;
+  color: #333333;
 }
 a:hover,
 a:focus {
-  color: #0085a1;
+  color: #0085A1;
 }
 a img:hover,
 a img:focus {
-  cursor: pointer;
+  cursor: zoom-in;
 }
 blockquote {
-  color: #808080;
+  color: #777777;
   font-style: italic;
-}
-li a {
-  text-decoration: underline;
 }
 hr.small {
   max-width: 100px;
@@ -51,22 +48,24 @@ hr.small {
   border-width: 4px;
   border-color: white;
 }
-.navbar-right {
-  margin: 0 0 0 0 !important;
-}
 .navbar-custom {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 999;
+  z-index: 3;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .navbar-custom .navbar-brand {
   font-weight: 800;
 }
+.navbar-custom .navbar-header .navbar-toggle {
+  color: #777777;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 12px;
+}
 .navbar-custom .nav li a {
-  text-decoration: none;
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 800;
@@ -119,18 +118,18 @@ hr.small {
     transition: transform 0.3s;
   }
   .navbar-custom.is-fixed .navbar-brand {
-    color: #404040;
+    color: #333333;
   }
   .navbar-custom.is-fixed .navbar-brand:hover,
   .navbar-custom.is-fixed .navbar-brand:focus {
-    color: #0085a1;
+    color: #0085A1;
   }
   .navbar-custom.is-fixed .nav li a {
-    color: #404040;
+    color: #333333;
   }
   .navbar-custom.is-fixed .nav li a:hover,
   .navbar-custom.is-fixed .nav li a:focus {
-    color: #0085a1;
+    color: #0085A1;
   }
   .navbar-custom.is-visible {
     /* if the user changes the scrolling direction, we show the header */
@@ -142,7 +141,7 @@ hr.small {
   }
 }
 .intro-header {
-  background-color: #808080;
+  background-color: #777777;
   background: no-repeat center center;
   background-attachment: scroll;
   -webkit-background-size: cover;
@@ -173,15 +172,17 @@ hr.small {
   margin-top: 0;
   font-size: 50px;
 }
+
 .intro-header .site-heading .subheading,
 .intro-header .page-heading .subheading {
   font-size: 24px;
   line-height: 1.1;
   display: block;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 300;
+  font-weight: 100;
   margin: 10px 0 0;
 }
+
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading h1,
   .intro-header .page-heading h1 {
@@ -220,12 +221,12 @@ hr.small {
   }
 }
 .post-preview > a {
-  color: #404040;
+  color: #333333;
 }
 .post-preview > a:hover,
 .post-preview > a:focus {
   text-decoration: none;
-  color: #0085a1;
+  color: #0085A1;
 }
 .post-preview > a > .post-title {
   font-size: 30px;
@@ -238,32 +239,23 @@ hr.small {
   margin-bottom: 10px;
 }
 .post-preview > .post-meta {
-  color: #808080;
+  color: #777777;
   font-size: 18px;
   font-style: italic;
   margin-top: 0;
 }
 .post-preview > .post-meta > a {
   text-decoration: none;
-  color: #404040;
+  color: #333333;
 }
 .post-preview > .post-meta > a:hover,
 .post-preview > .post-meta > a:focus {
-  color: #0085a1;
+  color: #0085A1;
   text-decoration: underline;
 }
 @media only screen and (min-width: 768px) {
   .post-preview > a > .post-title {
     font-size: 36px;
-  }
-}
-@media only screen and (max-width: 600px){
-  input[type="text"],
-  input[type="email"],
-  input[type="url"],
-  input[type="password"],
-  input[type="search"] {
-    max-width: 100%;
   }
 }
 .section-heading {
@@ -338,7 +330,7 @@ footer .copyright {
   opacity: 1;
 }
 .floating-label-form-group-with-focus label {
-  color: #0085a1;
+  color: #0085A1;
 }
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eeeeee;
@@ -358,8 +350,8 @@ form .row:first-child .floating-label-form-group {
 }
 .btn-default:hover,
 .btn-default:focus {
-  background-color: #0085a1;
-  border: 1px solid #0085a1;
+  background-color: #0085A1;
+  border: 1px solid #0085A1;
   color: white;
 }
 .pager {
@@ -379,26 +371,26 @@ form .row:first-child .floating-label-form-group {
 .pager li > a:hover,
 .pager li > a:focus {
   color: white;
-  background-color: #0085a1;
-  border: 1px solid #0085a1;
+  background-color: #0085A1;
+  border: 1px solid #0085A1;
 }
 .pager .disabled > a,
 .pager .disabled > a:hover,
 .pager .disabled > a:focus,
 .pager .disabled > span {
-  color: #808080;
-  background-color: #404040;
+  color: #777777;
+  background-color: #333333;
   cursor: not-allowed;
 }
 ::-moz-selection {
   color: white;
   text-shadow: none;
-  background: #0085a1;
+  background: #0085A1;
 }
 ::selection {
   color: white;
   text-shadow: none;
-  background: #0085a1;
+  background: #0085A1;
 }
 img::selection {
   color: white;
@@ -409,15 +401,5 @@ img::-moz-selection {
   background: transparent;
 }
 body {
-  webkit-tap-highlight-color: #0085a1;
-}
-
-/** SiteBuilder specific CSS styles */
-
-body.page-template-page-builder hr.footer {
-    display: none;
-}
-
-body.siteorigin-panels .intro-header {
-	margin-bottom: 0;
+  -webkit-tap-highlight-color: #0085A1;
 }
